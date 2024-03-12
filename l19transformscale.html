@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Transform with Scale</title>
+        <style>
+            .container {
+                width: 1200px;
+                background-color: gray;
+
+                margin: 48px 0;
+            }
+
+            .container .square {
+                width: 150px;
+                height: 70px;
+
+                background-color: red;
+                color: #fff;
+                font-size: 20px;
+
+                text-align: center;
+                line-height: 70px;
+                border-radius: 3px;
+
+                transition-property: transform;
+                transition-duration: 0.5s;
+                transition-timing-function: linear;
+            }
+
+            #scale:hover {
+                /* scale(anglexy) */
+                /* transform:scale(0); */
+                /* transform:scale(1); */
+                /* transform:scale(1.5); */
+                transform: scale(2);
+            }
+
+            #scalexy:hover {
+                /* scale(x,y) */
+                /* transform:scale(1,2); */
+                /* transform:scale(2,1); */
+                transform: scale(2, 3);
+            }
+
+            #scalex:hover {
+                /* scaleX(angleX) */
+                /* transform: scaleX(0.5); */
+                transform: scaleX(2);
+            }
+
+            #scaley:hover {
+                /* scaleY(angleY) */
+                /* transform: scaleY(0.5); */
+                transform: scaleY(2);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="scale" class="square">Div 1 XY</div>
+        </div>
+
+        <div class="container">
+            <div id="scalexy" class="square">Div 2 X,Y</div>
+        </div>
+
+        <div class="container">
+            <div id="scalex" class="square">Div 3 X</div>
+        </div>
+
+        <div class="container">
+            <div id="scaley" class="square">Div 4 Y</div>
+        </div>
+    </body>
+</html>

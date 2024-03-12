@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cursor</title>
+    <style type="text/css">
+        body{
+            height:100vh;
+
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            width: 1200px;
+
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 10px;
+
+        }
+
+        .container > *{
+            height:100px;
+        }
+
+        .container div:nth-of-type(odd){
+            background-color: steelblue;
+        }
+
+        .container div:nth-of-type(even){
+            background-color: skyblue;
+        }
+
+
+        .div1{
+            cursor: default;
+        }
+
+        .div2{
+            cursor: none;
+        }
+
+        .div3{
+            cursor: no-drop;
+        }
+
+        .div4{
+            cursor: not-allowed;
+        }
+
+        .div5{
+            cursor: wait;
+        }
+
+        .div6{
+            cursor: progress;
+        }
+
+        .div7{
+            cursor: move;
+        }
+
+        .div8{
+            cursor: all-scroll;
+        }
+
+        .div9{
+            cursor: zoom-in;
+        }
+
+        .div10{
+            cursor: zoom-out;
+        }
+
+        .div11{
+            cursor: help;
+        }
+
+        .div12{
+            cursor: copy;
+        }
+
+        .div13{
+            cursor: crosshair;
+        }
+
+        .div14{
+            cursor: e-resize;
+        }
+
+        .div15{
+            cursor: w-resize;
+        }
+
+        .div16{
+            cursor: s-resize;
+        }
+
+        .div17{
+            cursor: n-resize;
+        }
+
+        .div18{
+            cursor: ne-resize;
+        }
+
+        .div19{
+            cursor: sw-resize;
+        }
+
+        .div20{
+            cursor: se-resize;
+        }
+
+        .div21{
+            cursor: nw-resize;
+        }
+
+        .div22{
+            cursor: col-resize;
+        }
+
+        .div23{
+            cursor:row-resize;
+        }
+
+        .div24{
+            cursor: text;
+        }
+
+        .div25{
+            cursor: vertical-text;
+        }
+
+        .div26{
+            cursor: context-menu;
+        }
+
+        .div27{
+            cursor: cell;
+        }
+
+        .div28{
+            cursor: alias;
+        }
+
+        .div29{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="div1">This is DIV1 default</div>
+        <div class="div2">This is DIV2 none</div>
+        <div class="div3">This is DIV3 no-drop</div>
+        <div class="div4">This is DIV4 not-allowed</div>
+        <div class="div5">This is DIV5 wait</div>
+        <div class="div6">This is DIV6 progress</div>
+        <div class="div7">This is DIV7 move</div>
+        <div class="div8">This is DIV8 all-scroll</div>
+        <div class="div9">This is DIV9 zoom-in</div>
+        <div class="div10">This is DIV10 zoom-out</div>
+        <div class="div11">This is DIV11 help</div>
+        <div class="div12">This is DIV12 copy</div>
+        <div class="div13">This is DIV13 crosshair</div>
+        <div class="div14">This is DIV14 e-resize</div>
+        <div class="div15">This is DIV15 w-resize</div>
+        <div class="div16">This is DIV16 s-resize</div>
+        <div class="div17">This is DIV17 n-resize</div>
+        <div class="div18">This is DIV18 ne-resize</div>
+        <div class="div19">This is DIV19 sw-resize</div>
+        <div class="div20">This is DIV20 se-resize</div>
+        <div class="div21">This is DIV21 nw-resize</div>
+        <div class="div22">This is DIV22 col-resize</div>
+        <div class="div23">This is DIV23 row-resize</div>
+        <div class="div24">This is DIV24 text</div>
+        <div class="div25">This is DIV25 vertical-text</div>
+        <div class="div26">This is DIV26 context-menu</div>
+        <div class="div27">This is DIV27 cell</div>
+        <div class="div28">This is DIV28 alias</div>
+        <div class="div29">This is DIV29 pointer</div>
+    
+    </div>
+
+</body>
+</html>

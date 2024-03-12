@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Transform Origin</title>
+        <style>
+            body {
+                height: 100vh;
+
+                /* display: flex;
+                justify-content: center;
+                align-items: center; */
+
+                display: grid;
+                place-items: center;
+            }
+
+            img {
+                width: 400px;
+                height: 250px;
+
+                transition: transform 2s linear;
+
+                /* default */
+                /* transform-origin: center; */
+
+                /* transform-origin: top; */
+                /* transform-origin: bottom; */
+                /* transform-origin: left; */
+                /* transform-origin: right; */
+
+                /* transform-origin: left top; */
+                /* transform-origin: right top; */
+                /* transform-origin: left bottom; */
+                /* transform-origin: right bottom; */
+
+                /* transform-origin: left center; */
+                /* left center */
+                /* transform-origin: 0; */
+                /* transform-origin: 50%; */
+                /* transform-origin: 100%; */
+
+                /* transform-origin: 200px; */
+                /* transform-origin: 400px; */
+
+                /* left center */
+                /* transform-origin: 0; */
+                /* transform-origin: 0 0; */ /*left top*/
+                /*left center*/
+                /* transform-origin: 0 50%; */
+                /* transform-origin: 50% 50%; */
+                /* transform-origin: 30% 50%; */
+                transform-origin: 200px 250px;
+            }
+
+            img:hover {
+                transform: rotate(45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="img/cute_dog.jpg" alt="dog" />
+        </div>
+    </body>
+</html>

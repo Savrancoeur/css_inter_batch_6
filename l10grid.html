@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid</title>
+    <style type="text/css">
+        body{
+            height:100vh;
+
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            width: 1200px;
+            background-color: gray;
+
+            display:grid;
+
+            grid-template-columns:repeat(3,1fr);
+        }
+
+        .container > *{
+            /* width:200px; */
+            /* height:100px; */
+
+            padding:20px 0;
+        }
+
+        .container div:nth-of-type(odd){
+            background-color: steelblue;
+        }
+
+        .container div:nth-of-type(even){
+            background-color: skyblue;
+        }
+
+
+
+        .div1{
+            grid-column: span 3;
+        }
+
+        .div2{
+            grid-column: span 2;
+            /* grid-row:span 2; */
+        }
+
+        .div3{
+            grid-column: span 1;
+        }
+
+        .div4{
+            grid-column: span 1;
+        }
+
+        .div5{
+            grid-column: span 2;
+        }
+
+        .div6{
+            grid-column: span 1;
+        }
+
+        .div7{
+            grid-column: span 1;
+        }
+
+        .div8{
+            grid-column: span 1;
+            grid-row: span 3;
+        }
+
+        .div9{
+            grid-column: span 2;
+        }
+
+        .div10{
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="div1">This is DIV1</div>
+        <div class="div2">This is DIV2</div>
+        <div class="div3">This is DIV3</div>
+        <div class="div4">This is DIV4</div>
+        <div class="div5">This is DIV5</div>
+        <div class="div6">This is DIV6</div>
+        <div class="div7">This is DIV7</div>
+        <div class="div8">This is DIV8</div>
+        <div class="div9">This is DIV9</div>
+        <div class="div10">This is DIV10</div>
+
+    </div>
+
+</body>
+</html>

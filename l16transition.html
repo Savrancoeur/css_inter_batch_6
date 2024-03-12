@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Transition</title>
+        <style>
+            .div1 {
+                width: 300px;
+                height: 100px;
+                background-color: steelblue;
+                color: #fff;
+                font-size: 20px;
+
+                /* text-align: center;
+                line-height: 100px; */
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                /* shorthand */
+                /* transition: background-color 5s; */
+                /* transition: background-color 5000ms; */
+
+                transition-property: background-color;
+                /* transition-duration: 2s; */
+                /* transition-duration: 0.5s; */
+                /* transition-duration: .3s; */
+                transition-duration: 3000ms;
+            }
+
+            .div1:hover {
+                background-color: green;
+            }
+
+            .div2 {
+                width: 300px;
+                height: 100px;
+                background-color: steelblue;
+                color: #fff;
+                font-size: 20px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                /* transition: all 2s; */
+                /* transition: all 2s 5s; */
+
+                /* transition-property: all;
+                transition-duration: 2s;
+                transition-delay: 5s; */
+
+                /* transition-property:width; */
+                /* transition-property:width,background-color; */
+                /* transition-property: width, background-color, color; */
+                /* transition-duration: 2s; */
+                /* transition-delay: 3s; */
+
+                /* transition: width 1s; */
+                transition:
+                    width 1s,
+                    background-color 2s,
+                    color 3s;
+            }
+
+            .div2:hover {
+                width: 400px;
+                background: green;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1">CSS Transition Div 1</div>
+
+        <hr />
+
+        <div class="div2">CSS Transition Div 2</div>
+    </body>
+
+    <hr />
+</html>

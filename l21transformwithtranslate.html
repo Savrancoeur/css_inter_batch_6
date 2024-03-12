@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Transition with Translate</title>
+        <style>
+            .container {
+                width: 1200px;
+                background-color: gray;
+                margin: 10px 0;
+            }
+
+            .container .square {
+                width: 150px;
+                height: 50px;
+
+                background-color: red;
+                color: #fff;
+                font-size: 20px;
+
+                text-align: center;
+                line-height: 50px;
+                border-radius: 3px;
+
+                transition-property: transform;
+                transition-duration: 0.5s;
+                transition-timing-function: linear;
+            }
+
+            #translate:hover {
+                /* translate(x) */
+
+                /* transform: translate(300px); */
+                /* transform: translate(-150px); */
+
+                /* transform: translate(150px); */
+                transform: translate(100%);
+            }
+
+            #translatex:hover {
+                /* translateX(x) */
+
+                /* transform: translateX(300px); */
+                /* transform: translateX(-150px); */
+
+                /* transform: translateX(150px); */
+                transform: translateX(100%);
+            }
+
+            #translatey:hover {
+                /* translateY(y) */
+
+                /* transform: translateY(300px); */
+                /* transform: translateY(150px); */
+
+                transform: translateX(100%);
+            }
+
+            #translatexy:hover {
+                /* translateXY(x,y) */
+
+                /* transform: translate(150px,0); */
+                /* transform: translate(0.70px); */
+
+                /* transform: translate(100%,50%); */
+                /* transform: translate(-100%,-50%); */
+
+                transform: translateX(50%) translateY(100%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="translate" class="square">Div 1 X</div>
+        </div>
+
+        <div class="container">
+            <div id="translatex" class="square">Div 2 X</div>
+        </div>
+
+        <div class="container">
+            <div id="translatey" class="square">Div 3 Y</div>
+        </div>
+
+        <div class="container">
+            <div id="translatexy" class="square">Div 4 XY</div>
+        </div>
+    </body>
+</html>
