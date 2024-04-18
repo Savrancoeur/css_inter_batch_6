@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Perspective with Origin</title>
+        <style>
+            * {
+                perspective: 500px;
+            }
+
+            body {
+                height: 100vh;
+
+                display: grid;
+                place-items: center;
+            }
+
+            .container {
+                /* perspective: 500px; */
+
+                /* default */
+                /* perspective-origin: center; */
+
+                /* perspective-origin: top; */
+                /* perspective-origin: bottom; */
+                /* perspective-origin: left; */
+                /* perspective-origin: right; */
+
+                /* perspective-origin: left top; */
+                /* perspective-origin: left bottom; */
+                /* perspective-origin: right top; */
+                /* perspective-origin: right bottom; */
+
+                /* left center */
+                /* perspective-origin: 0 ; */
+                /* left top */
+                /* perspective-origin: 0 0; */
+                /* perspective-origin: 0 bottom; */
+                /* perspective-origin: 100% bottom; */
+
+                /* perspective-origin: 0 top; */
+                /* perspective-origin: 100% top; */
+
+                perspective-origin: 50% 50%;
+            }
+
+            .container img {
+                width: 300px;
+
+                transition: transform 1s linear;
+            }
+
+            .container img:hover {
+                transform: translateZ(300px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img
+                src="../../HIT/Images&Logos/genshin-arlecchino-drip-marketing.webp"
+                alt="yelan"
+            />
+        </div>
+    </body>
+</html>

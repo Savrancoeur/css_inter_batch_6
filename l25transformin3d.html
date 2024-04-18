@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Transform in 3D</title>
+        <style>
+            * {
+                perspective: 500px;
+            }
+
+            body {
+                height: 100vh;
+
+                display: grid;
+                place-items: center;
+            }
+
+            .container {
+            }
+
+            .container img {
+                width: 300px;
+
+                transition: transform 1s linear;
+            }
+
+            .container img:hover {
+                /* transform: rotateX(45deg); */
+                /* transform: rotateX(90deg); */
+                /* transform: rotateX(180deg); */
+                /* transform: rotateX(1turn); */
+
+                /* transform: rotateX(-90deg); */
+                /* transform: rotateX(-180deg); */
+                /* transform: rotateX(-360deg); */
+
+                /* transform: rotateY(45deg); */
+                /* transform: rotateY(90deg); */
+                /* transform: rotateY(180deg); */
+                /* transform: rotateY(-45deg); */
+                transform: rotateY(-360deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img
+                src="../../HIT/Images&Logos/genshin-arlecchino-drip-marketing.webp"
+                alt="yelan"
+            />
+        </div>
+    </body>
+</html>

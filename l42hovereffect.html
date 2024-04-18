@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Fontawesome CDNJS link 5.15.4 -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Hover Effect</title>
+        <style type="text/css">
+            body {
+                font-family: sans-serif;
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            a {
+                width: 200px;
+                background-color: green;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+                font-size: 24px;
+                padding: 15px 0;
+            }
+
+            a span {
+                position: relative;
+
+                transition: padding-left 0.5s;
+            }
+
+            a span::after {
+                content: "\f118";
+                font-family: "Font Awesome 5 Free";
+
+                position: absolute;
+                right: 0;
+                top: 0;
+
+                opacity: 0;
+
+                transition: opacity 0.5s;
+            }
+
+            a:hover span::after {
+                opacity: 1;
+            }
+
+            a:hover span {
+                padding-left: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#">Hover Me <span></span></a>
+    </body>
+</html>
