@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Spinner</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style type="text/css">
+            body {
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                padding: 0;
+                margin: 0;
+            }
+
+            .spinner {
+                width: 30px;
+                height: 30px;
+
+                /* animation-name: myspinner;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear; */
+
+                /* Short Hand */
+                animation: myspinner 1s infinite linear;
+            }
+
+            @keyframes myspinner {
+                from {
+                    transform: rotate(0turn);
+                }
+
+                to {
+                    transform: rotate(1turn);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <img src="./img/loader.svg" class="spinner" alt="loader" />
+    </body>
+</html>

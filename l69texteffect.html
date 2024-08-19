@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <title>Text Effect</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style rel="stylesheet" type="text/css">
+            body {
+                font-family: sans-serif;
+                height: 100vh;
+                background-color: #000;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                padding: 0;
+                margin: 0;
+            }
+
+            h1 {
+                color: transparent;
+                font-size: 3rem;
+                text-transform: uppercase;
+                letter-spacing: 10px;
+
+                white-space: nowrap;
+
+                position: relative;
+            }
+
+            h1:before {
+                content: "Thank You For Shopping With Us...";
+
+                width: 0%;
+                color: transparent;
+                -webkit-text-stroke: 2px red;
+
+                position: absolute;
+                left: 0;
+                top: 0;
+
+                overflow: hidden;
+
+                animation-name: myani;
+                animation-duration: 20s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+
+            @keyframes myani {
+                0% {
+                    width: 0%;
+                }
+
+                50% {
+                    width: 100%;
+                }
+
+                100% {
+                    width: 0%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Thank You For Shopping With Us...</h1>
+    </body>
+</html>

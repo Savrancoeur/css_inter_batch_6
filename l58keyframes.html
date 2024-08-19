@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Key Frame</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style type="text/css">
+            body {
+                padding: 0;
+                margin: 0;
+            }
+
+            .box1 {
+                width: 150px;
+                height: 150px;
+                background-color: steelblue;
+
+                animation-name: myani;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
+
+                /* animation-iteration-count: 2; */
+                animation-iteration-count: infinite;
+
+                /* animation-timing-function: ease; */ /*This is default value */
+                /* animation-timing-function: ease-in; */
+                /* animation-timing-function: ease-out; */
+                /* animation-timing-function: ease-in-out; */
+                animation-timing-function: linear;
+
+                /* animation-direction: normal; */ /*This is default value */
+                /* animation-direction: reverse; */
+
+                /* animation-direction: alternate; */
+                animation-direction: alternate-reverse;
+            }
+
+            @keyframes myani {
+                0% {
+                    transform: translate(0px);
+                }
+
+                50% {
+                    transform: translate(600px);
+                }
+
+                100% {
+                    transform: translate(600px, 600px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+
+        <hr />
+    </body>
+</html>

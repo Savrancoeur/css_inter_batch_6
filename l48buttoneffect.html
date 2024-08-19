@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Fontawesome CDNJS link 5.15.4 -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Button Effect</title>
+        <style type="text/css">
+            body {
+                font-family: sans-serif;
+                height: 100vh;
+                background-color: gray;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .btn {
+                width: 350px;
+                height: 65px;
+                background-color: #000;
+                color: #fff;
+
+                border: none;
+                cursor: pointer;
+
+                position: relative;
+
+                overflow: hidden;
+            }
+
+            .btn span {
+                color: #fff;
+                font-size: 20px;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+
+                /* Note! if you want to use transform !!! that element must be block element */
+                display: block;
+                transform: scaleX(0.7);
+                transform-origin: left;
+            }
+
+            .btn em {
+                width: 100%;
+                height: 3px;
+                background-color: #fff;
+
+                position: absolute;
+                left: 0;
+                top: 50%;
+
+                transform: scale(0.25);
+                transform-origin: right;
+                transition: left 0.3s ease-in-out;
+            }
+
+            /* .btn::before {
+                content: "";
+
+                width: 100%;
+                height: 40%;
+                background-color: #fff;
+
+                position: absolute;
+                left: 0;
+                top: 0;
+
+                transform: translateX(-100%);
+            }
+
+            .btn::after {
+                content: "";
+
+                width: 100%;
+                height: 40%;
+                background-color: #fff;
+
+                position: absolute;
+                left: 0;
+                bottom: 0;
+
+                transform: translateX(100%);
+            } */
+
+            .btn::before,
+            .btn::after {
+                content: "";
+
+                width: 100%;
+                height: 40%;
+                background-color: #fff;
+            }
+
+            .btn::before {
+                position: absolute;
+                left: 0;
+                top: 0;
+
+                transform: translateX(-100%);
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .btn::after {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+
+                transform: translateX(100%);
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .btn:hover::before {
+                transform: translateX(90%) skew(45deg);
+            }
+
+            .btn:hover::after {
+                transform: translateX(-90%) skew(45deg);
+            }
+
+            .btn:hover {
+                color: yellow;
+            }
+
+            .btn:hover em {
+                left: -20%;
+            }
+        </style>
+    </head>
+    <body>
+        <button type="button" class="btn">
+            <span>Hover Me</span>
+            <em></em>
+        </button>
+    </body>
+</html>

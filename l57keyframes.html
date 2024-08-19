@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Key Frame</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style type="text/css">
+            body {
+                padding: 0;
+                margin: 0;
+            }
+
+            .box1 {
+                width: 150px;
+                height: 150px;
+                background-color: steelblue;
+
+                animation-name: myani;
+                animation-duration: 3s;
+
+                /* animation-fill-mode: backwards;*/ /*This is default value */
+                animation-fill-mode: forwards;
+
+                animation-delay: 5s;
+            }
+
+            @keyframes myani {
+                0% {
+                    transform: translate(0px);
+                }
+
+                50% {
+                    transform: translate(500px);
+                }
+
+                100% {
+                    transform: translateX(500px) translateY(500px);
+                }
+            }
+
+            .box2 {
+                width: 150px;
+                height: 150px;
+                background-color: orange;
+
+                animation-name: myrules;
+                animation-duration: 7s;
+            }
+
+            @keyframes myrules {
+                0% {
+                    background-color: violet;
+                    transform: translate(0px);
+                }
+
+                25% {
+                    background-color: blue;
+                    transform: translate(300px);
+                }
+
+                50% {
+                    background-color: green;
+                    transform: translateX(300px) translateY(300px);
+                }
+
+                75% {
+                    background-color: black;
+                    transform: translate(0, 300px);
+                }
+
+                100% {
+                    background-color: pink;
+                    transform: translate(0px);
+                }
+            }
+
+            .box3 {
+                width: 150px;
+                height: 150px;
+                background-color: violet;
+
+                /* position: absolute; */
+                position: relative;
+
+                animation-name: myshakes;
+                animation-duration: 3s;
+            }
+
+            @keyframes myshakes {
+                0% {
+                    left: 0px;
+                }
+
+                12.5% {
+                    left: -100px;
+                }
+
+                25% {
+                    left: 100px;
+                }
+
+                37.5% {
+                    left: -50px;
+                }
+
+                50% {
+                    left: 50px;
+                }
+
+                62.5% {
+                    left: -25px;
+                }
+
+                75% {
+                    left: 25px;
+                }
+
+                87.5% {
+                    left: -12.5px;
+                }
+
+                100% {
+                    left: 12.5px;
+                }
+            }
+
+            /* For bounce effect, you can use the code below */
+            /* @keyframes myshakes {
+                0% {
+                    top: 0px;
+                }
+
+                12.5% {
+                    top: -100px;
+                }
+
+                25% {
+                    top: 100px;
+                }
+
+                37.5% {
+                    top: -50px;
+                }
+
+                50% {
+                    top: 50px;
+                }
+
+                62.5% {
+                    top: -25px;
+                }
+
+                75% {
+                    top: 25px;
+                }
+
+                87.5% {
+                    top: -12.5px;
+                }
+
+                100% {
+                    top: 12.5px;
+                }
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="box1">Box 1</div>
+
+        <hr />
+
+        <div class="box2">Box 2</div>
+
+        <hr />
+
+        <div class="box3">Box 3</div>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <title>Loader</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style rel="stylesheet" type="text/css">
+            body {
+                font-family: sans-serif;
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                padding: 0;
+                margin: 0;
+            }
+
+            .loader {
+                display: flex;
+            }
+
+            .loader-item {
+                width: 7px;
+                height: 7px;
+                background-color: rgba(0, 0, 0, 0.3);
+
+                border-radius: 50%;
+                margin: 0 5px;
+
+                animation: myloader 0.5s ease-in infinite;
+            }
+
+            .loader-item:nth-of-type(2) {
+                animation-delay: 0.1s;
+            }
+
+            .loader-item:nth-of-type(3) {
+                animation-delay: 0.2s;
+            }
+
+            @keyframes myloader {
+                0% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(-5px);
+                }
+
+                100% {
+                    transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="loader">
+            <div class="loader-item"></div>
+            <div class="loader-item"></div>
+            <div class="loader-item"></div>
+        </div>
+    </body>
+</html>

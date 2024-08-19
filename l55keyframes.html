@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Key Frame</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style type="text/css">
+            body {
+                padding: 0;
+                margin: 0;
+            }
+
+            .box {
+                width: 150px;
+                height: 150px;
+                background-color: steelblue;
+
+                animation-name: myani;
+                animation-duration: 3s;
+            }
+
+            @keyframes myani {
+                /* from {
+                    transform: translateX(0px);
+                }
+
+                to {
+                    transform: translateX(1000px);
+                } */
+
+                /* 0% {
+                    transform: translateX(0px);
+                }
+
+                100% {
+                    transform: translateX(1000px);
+                } */
+
+                /* to {
+                    transform: translateX(1000px);
+                } */
+
+                100% {
+                    transform: translateX(1000px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+</html>

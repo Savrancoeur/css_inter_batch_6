@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Button Effect</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style type="text/css">
+            body {
+                font-family: sans-serif;
+                height: 100vh;
+                background-color: #000;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .btn {
+                width: 300px;
+                height: 100px;
+                background-color: #222;
+
+                color: #fff;
+                font-size: 40px;
+
+                border-radius: 10px;
+
+                border: none;
+                cursor: pointer;
+
+                position: relative;
+
+                /* overflow: hidden; */
+            }
+
+            .btn .line {
+                width: 5px;
+                height: 5px;
+                background-color: transparent;
+
+                position: absolute;
+                top: 0;
+                left: 50%;
+
+                transform: translateX(-50%);
+                transition: all 0.5s;
+            }
+
+            .btn:hover .line {
+                width: 200px;
+                height: 80px;
+                /* background-color: green; */
+
+                border-radius: 10px;
+                border-bottom: 2px solid #f4f4f4;
+            }
+
+            .btn:hover {
+                background-color: #555;
+            }
+        </style>
+    </head>
+    <body>
+        <button type="button" class="btn">
+            Hover Me<span class="line"></span>
+        </button>
+    </body>
+</html>

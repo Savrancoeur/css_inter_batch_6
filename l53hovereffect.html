@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Hover Effect</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style type="text/css">
+            body {
+                font-family: sans-serif;
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .btn {
+                background-color: steelblue;
+                color: #fff;
+
+                font-size: 22px;
+                text-transform: uppercase;
+                border: none;
+                cursor: pointer;
+
+                padding: 12px 40px;
+
+                position: relative;
+
+                /* overflow: hidden; */
+            }
+
+            .btn::before {
+                content: "";
+                width: 24px;
+                height: 24px;
+                /* background-color: red; */
+
+                border-left: 2px solid steelblue;
+                border-top: 2px solid steelblue;
+
+                position: absolute;
+                left: -5px;
+                top: -5px;
+
+                transition: all 0.5s;
+            }
+
+            .btn::after {
+                content: "";
+                width: 24px;
+                height: 24px;
+                /* background-color: red; */
+
+                border-right: 2px solid steelblue;
+                border-bottom: 2px solid steelblue;
+
+                position: absolute;
+                right: -5px;
+                bottom: -5px;
+
+                transition: all 0.5s;
+            }
+
+            .btn:hover::before {
+                /* left: calc(100% - 24px + 3px); */
+                left: calc(100% - 21px);
+
+                border-left: none;
+                border-right: 2px solid steelblue;
+            }
+
+            .btn:hover::after {
+                /* right: calc(100% - 24px + 3px); */
+                right: calc(100% - 21px);
+
+                border-right: none;
+                border-left: 2px solid steelblue;
+            }
+        </style>
+    </head>
+    <body>
+        <button type="button" class="btn">Hover Me</button>
+    </body>
+</html>
